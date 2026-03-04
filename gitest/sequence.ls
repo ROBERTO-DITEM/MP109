@@ -1,0 +1,49 @@
+/PROG  SEQUENCE
+/ATTR
+OWNER		= MNEDITOR;
+COMMENT		= "";
+PROG_SIZE	= 419;
+CREATE		= DATE 25-12-11  TIME 11:19:52;
+MODIFIED	= DATE 25-12-11  TIME 14:01:30;
+FILE_NAME	= ;
+VERSION		= 0;
+LINE_COUNT	= 21;
+MEMORY_SIZE	= 747;
+PROTECT		= READ_WRITE;
+TCD:  STACK_SIZE	= 0,
+      TASK_PRIORITY	= 50,
+      TIME_SLICE	= 0,
+      BUSY_LAMP_OFF	= 0,
+      ABORT_REQUEST	= 0,
+      PAUSE_REQUEST	= 0;
+DEFAULT_GROUP	= 1,*,*,*,*;
+CONTROL_CODE	= 00000000 00000000;
+LOCAL_REGISTERS	= 0,0,0;
+/APPL
+
+AUTO_SINGULARITY_HEADER;
+  ENABLE_SINGULARITY_AVOIDANCE   : FALSE;
+/MN
+   1:   ;
+   2:  UFRAME_NUM=1 ;
+   3:  UTOOL_NUM=1 ;
+   4:   ;
+   5:  CALL GOHOME    ;
+   6:  IF ...=... ... ;
+   7:  CALL PKSEPARACK1    ;
+   8:   ;
+   9:  CALL PKSTACK1    ;
+  10:   ;
+  11:  CALL DROPCONV1    ;
+  12:  CALL DROPCONV2    ;
+  13:   ;
+  14:  CALL GOHOME    ;
+  15:   ;
+  16:   ;
+  17:   ;
+  18:   ;
+  19:   ;
+  20:   ;
+  21:   ;
+/POS
+/END
